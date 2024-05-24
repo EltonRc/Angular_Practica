@@ -6,10 +6,10 @@ const routes: Routes = [
         path:"registro",
         loadChildren: ()=> import("./pages/registro/registro.module").then(m=>m.RegistroModule)
     },
-    // {
-    //     path:"mantenmiento",
-    //     loadChildren: ()=> import("./pages/registro/registro.module").then(m=>m.RegistroModule)
-    // },
+    {
+         path:"mantenimiento",
+         loadChildren: ()=> import("./pages/mantenimiento/mantenimiento.module").then(m=>m.MantenimientoModule)
+    },
     {
         path:"",
         pathMatch:"full",
